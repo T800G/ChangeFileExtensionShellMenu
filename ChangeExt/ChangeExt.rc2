@@ -1,0 +1,49 @@
+//resources for the dialog
+
+
+IDB_LINKBITMAP   BITMAP   "Res\\helplink.bmp"
+
+IDI_ICON1          ICON           "Res\\dll.ico"
+
+IDI_ICON2          ICON           "Res\\info.ico"
+
+//
+// About dialog
+//
+IDD_ABOUTBOX DIALOGEX 0, 0, 169, 45
+STYLE DS_SETFONT | WS_BORDER | WS_CAPTION | WS_DLGFRAME | WS_POPUP | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg 2", 400, 0, 1
+{
+    GROUPBOX        "", IDC_STATIC, 59, 38, 55, 18
+    CTEXT           "OK", IDC_STATIC, 76, 44, 23, 10, SS_CENTER, WS_EX_TRANSPARENT
+    GROUPBOX        "", IDC_STATIC, 7, 4, 160, 35
+    CTEXT           "Change File Extension Shell Menu\nversion 2.8.6.2\nT800 Productions © 2012", IDC_STATIC, 42, 11, 120, 25, SS_CENTER
+    ICON            IDI_ICON1, IDC_STATIC, 13, 13, 11, 10, SS_ICON
+}
+
+
+//
+// change extension dialog
+//
+IDD_NEWEXTDLG DIALOGEX 0, 0, 185, 62
+STYLE DS_3DLOOK | DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_VISIBLE | WS_BORDER | WS_CAPTION | WS_DLGFRAME | WS_POPUP | WS_SYSMENU
+CAPTION "Change file extension"
+FONT 8, "MS Shell Dlg 2", 400, 0, 1
+{
+    CTEXT           "", IDC_STATIC_BCKG, 4294967293, 34, 190, 35, WS_DLGFRAME | SS_CENTER
+    EDITTEXT        IDC_EDITCTRL, 84, 11, 87, 12, WS_GROUP | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK", IDOK, 68, 42, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 128, 42, 50, 14
+    ICON            IDI_ICON2, IDABOUT1, 14, 42, 22, 20, SS_ICON | SS_NOTIFY | 0x00000800
+}
+
+
+//
+// dialog accelerators
+//
+IDR_ACCELERATOR1 ACCELERATORS
+{
+    VK_ESCAPE,     ID_CANCEL, VIRTKEY
+    VK_F1,         IDC_HELPLINK, VIRTKEY
+}

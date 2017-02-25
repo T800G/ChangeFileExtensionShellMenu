@@ -1,0 +1,9 @@
+; ChangeExt.def : Declares the module parameters.
+
+LIBRARY      "ChangeExt.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer	PRIVATE

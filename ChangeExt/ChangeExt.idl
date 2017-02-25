@@ -1,0 +1,39 @@
+// ChangeExt.idl : IDL source for ChangeExt.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ChangeExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	
+	[
+		object,
+		uuid(6F5B11EC-35C3-49E0-9BE2-641F921E773F),
+		helpstring("IShellCtxMenu Interface"),
+		pointer_default(unique)
+	]
+	interface IShellCtxMenu : IUnknown
+	{
+	};
+
+[
+	uuid(46639FFA-586C-4544-8C2F-3826DFDBFA79),
+	version(1.0),
+	helpstring("ChangeExt 1.0 Type Library")
+]
+library CHANGEEXTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	
+	[
+		uuid(BDFA36F7-D292-49E5-BC88-BDAD1B8CB00B),
+		helpstring("ShellCtxMenu Class")
+	]
+	coclass ShellCtxMenu
+	{
+		[default] interface IShellCtxMenu;
+	};
+};
