@@ -1,4 +1,4 @@
-# ChangeFileExtension
+# Change File Extension Shell Menu
 Easy and flexible way to change file extensions
 <br><br>![alt text](https://github.com/T800G/ChangeFileExtension/blob/master/chx.png)<br>
 ##Minimum sytem requirements
